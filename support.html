@@ -45,6 +45,7 @@
   .contact a { font-weight: 600; word-break: break-all; }
   nav { font-size: 15px; color: var(--muted); }
   nav a { margin-right: 12px; white-space: nowrap; }
+  ol { padding-left: 22px; margin: 0 0 10px; }
 </style>
 </head>
 <body>
@@ -60,25 +61,54 @@
     </div>
 
     <h3>How do I restore my purchase?</h3>
-    <p>Sign in to the App Store with the same Apple Account you bought with. In OnceScan, tap "free left" in the top-right corner (or try to create a new document), then tap "Restore Purchase" at the bottom of the screen. You can also tap the gear icon on the main screen and choose "Restore Purchase" in Settings.</p>
+    <p>Sign in to the App Store with the same Apple Account you bought with. In OnceScan, tap "10 free left" (the number goes down as you scan) in the top-right corner (or try to create a new document), then tap "Restore Purchase" at the bottom of the screen. You can also tap the gear icon on the main screen and choose "Restore Purchase" in Settings.</p>
 
     <h3>How does the free allowance work?</h3>
-    <p>Your first 3 documents are free, and each document can have as many pages as you like. Deleting a document or reinstalling the app does not give the free documents back. After that, one payment unlocks unlimited documents. There is no subscription.</p>
+    <p>Your first 10 documents are free, and while you have free documents left, each one can have as many pages as you like. Deleting a document or reinstalling the app does not give the free documents back. After that, one payment unlocks unlimited documents. There is no subscription.</p>
+    <p>Once the free documents are used up, everything you made can still be opened, shared and exported, but pages can no longer be added to an existing document: "Add Pages" in "Edit Pages" opens the purchase screen. Retaking or replacing a page stays free. Splitting a document with "New Document from Here" counts as a new document.</p>
 
     <h3>I paid but it's still locked. What now?</h3>
     <p>If the purchase is waiting for approval (for example Ask to Buy), OnceScan unlocks on its own once it's approved. Otherwise, check your internet connection and tap "Restore Purchase", either on the purchase screen or under the gear icon → Settings.</p>
 
     <h3>Where are my scans stored?</h3>
-    <p>Inside OnceScan on your iPhone. OnceScan has no account and itself sends nothing anywhere, so scans inside the app do not sync to other devices. If you turn on automatic filing, each scan is also saved as a PDF into the folder you chose; if that folder is in iCloud Drive, Apple syncs it to your other devices like any other file. Deleting the app removes the scans inside OnceScan, but not PDFs that were already filed or shared.</p>
+    <p>Inside OnceScan on your iPhone. OnceScan has no account and itself sends nothing anywhere, so scans inside the app do not sync to other devices. If you turn on "Save every scan as a PDF in a folder", each scan is also saved as a PDF into the folder you chose; if that folder is in iCloud Drive, Apple syncs it to your other devices like any other file. Deleting the app removes the scans inside OnceScan, but not PDFs that were already filed or shared.</p>
 
-    <h3>How do I turn on automatic filing?</h3>
-    <p>Tap the gear icon on the main screen, turn on "File scans automatically" and choose a folder in iCloud Drive or On My iPhone. From then on every scan is saved there as a PDF, sorted the way you pick under "Sort into" (by type, by type and year, by month, or all in one folder). Renaming a scan or changing its category moves its PDF. OnceScan never rewrites or deletes a filed PDF, so notes or signatures you add to it are kept. Scans you made before turning it on are filed too.</p>
+    <h3>How do I save every scan to a folder?</h3>
+    <p>Tap the gear icon on the main screen. Under "Save to a Folder", turn on "Save every scan as a PDF in a folder" and choose a folder in iCloud Drive or On My iPhone. From then on every scan is saved there as a PDF, sorted the way you pick under "How PDFs are sorted": "By type", "By type, then by year", "By year, then by month and type", "By month" or "All in one folder". Once you have labels, four more choices appear: "By label, then by type", "By label, then by year", "By label, then by year and type" and "By label, then by month". Renaming a scan or changing its category moves its PDF. OnceScan never rewrites a filed PDF, so notes or signatures you add to it are kept; editing the pages keeps the earlier PDF in an "Old Versions" folder. A filed PDF is deleted only if you turn on "Delete filed PDFs too", which appears under "Save to a Folder" once a folder is chosen. Scans you made before turning it on are filed too.</p>
 
     <h3>Why can't I choose my Google Drive (or another cloud drive) folder?</h3>
     <p>Some cloud drive apps, such as Google Drive, don't let other apps save into their folders, so they may not appear or may not accept files. For those, open a document, tap "Share PDF" and save it to that app. iCloud Drive and On My iPhone always work. If filing stops working, open Settings in OnceScan and choose the folder again.</p>
 
+    <h3>Why enter my own name in Settings? Why is my own invoice counted as income?</h3>
+    <p>In Settings, under "Who You Are", enter your name, your company name or your tax ID, one per line. When OnceScan finds one of them as the sender of an invoice, it knows you issued it: the scan is named after your client instead of you, and it counts as income. Receipts and bills you pay count as spending. Everything else counts as neither.</p>
+    <h3>How do I mark a scan as income or spending?</h3>
+    <p>Open the scan and mark it on its card as income, spending, or not counted. Your choice is kept, even if you rename the scan or change its category. Exports and their spreadsheets show spending and income as two separate subtotals.</p>
+    <h3>Can a scan have more than one label?</h3>
+    <p>Yes. On a scan's card, add as many labels as you like, for example a client, a trip, a child or taxes. Select several scans on the main screen to add or remove a label for all of them at once. Filtering by a label shows every scan that has it, and an export by date can be limited to one label.</p>
+    <h3>Can I fix an amount, a date or the tax that was read?</h3>
+    <p>Yes. Tap the amount, the date or any other detail on a scan's card and correct it. The name, totals and spreadsheet use your correction.</p>
+    <h3>How do I export a month, a quarter or a year?</h3>
+    <p>On the main screen, open the menu and choose "Export by Date…". Pick a month, a quarter, a year, a financial year or your own dates, and optionally a category or a label. You get one PDF with all the scans and, if you like, a spreadsheet (CSV) with date, name, category, amount, tax, invoice number and labels, plus subtotals for spending and income.</p>
+    <h3>Can I import a password-protected PDF?</h3>
+    <p>Yes. Import it from Files as usual; OnceScan asks for the password. The password is used once to open the PDF and is not stored. The unlocked copy is kept in OnceScan, so the scan opens without the password afterwards. Imported PDFs also keep their original file.</p>
+    <h3>How do I add a due date to my calendar?</h3>
+    <p>When OnceScan reads a due date on a bill, it shows it on the scan's card. Tap "Add to Calendar": Apple's new-event screen opens with the date and the scan's name filled in. Check it and tap Add. OnceScan doesn't read your calendar.</p>
+    <h3>How do I share scans with my family?</h3>
+    <p>OnceScan doesn't sync between iPhones, but the filing folder can be shared through iCloud Drive:</p>
+    <ol>
+      <li>In the Files app, go to iCloud Drive and create a folder, for example "Family papers".</li>
+      <li>Touch and hold the folder, then tap Share.</li>
+      <li>Under the share options choose "Only invited people" and "Can make changes", then send the invitation to your family (for example in Messages). The wording may differ slightly between iOS versions.</li>
+      <li>In OnceScan, tap the gear icon, turn on "Save every scan as a PDF in a folder" and choose that folder.</li>
+      <li>Your family opens the invitation once; from then on the folder appears in their Files app under iCloud Drive, with every PDF you scan. If they use OnceScan too, they can choose the same folder in their own Settings.</li>
+    </ol>
+    <p>With Family Sharing turned on, one purchase also unlocks OnceScan for everyone in your family group.</p>
+    <h3>Does the Face ID lock protect my filed PDFs?</h3>
+    <p>No. The lock covers OnceScan itself. PDFs in your filing folder and their old versions are ordinary files in the Files app, so anyone who can use your unlocked iPhone can open them. If your filing folder is in iCloud Drive, you can turn on Advanced Data Protection for iCloud in the Settings app.</p>
+    <h3>Does it work with VoiceOver and large text?</h3>
+    <p>Yes. Every screen works with VoiceOver, and a scan can be read aloud: who it's from, how much and when it's due, or the whole text. "Text &amp; Read Aloud" shows what was read in your own text size, rewrapped to fit the screen, and pages zoom up to 5x.</p>
     <h3>Which languages can it read?</h3>
-    <p>English, Traditional Chinese, Japanese, German, French and Spanish. Text recognition runs on your iPhone.</p>
+    <p>OnceScan reads papers in English, Chinese (Traditional and Simplified), Japanese, German, French, Spanish, Italian, Portuguese, Dutch, Korean and Malay. Text recognition runs on your iPhone. The app itself is in English, Traditional Chinese, Japanese and German.</p>
     <h3>Can I search inside the PDF?</h3>
     <p>Yes. Every scan is exported as a searchable PDF: the recognized text is embedded invisibly, so when you open the PDF in Files, Preview or Mail you can search inside it and select or copy the text. The search box at the top of the Files app looks at file names only; to search the text of all your scans at once, use the search in OnceScan.</p>
   </section>
@@ -86,20 +116,49 @@
   <section id="zh-Hant" lang="zh-Hant">
     <h2>繁體中文</h2>
     <div class="contact"><p>有問題請寄信到 <a href="mailto:oncescan.app@gmail.com">oncescan.app@gmail.com</a>，附上 iPhone 型號與 iOS 版本，通常 2 個工作天內回覆。</p></div>
-    <h3>怎麼還原購買？</h3>
-    <p>用當初購買的同一個 Apple 帳號登入 App Store。在 OnceScan 點右上角「剩 N 份免費」（或試著建立新文件），再點畫面下方的「回復購買」。也可以點主畫面的齒輪圖示，在設定裡點「回復購買」。</p>
+    <h3>怎麼回復購買？</h3>
+    <p>用當初購買的同一個 Apple 帳號登入 App Store。在 OnceScan 點右上角「剩 10 份免費」（數字會隨使用減少）（或試著建立新文件），再點畫面下方的「回復購買」。也可以點主畫面的齒輪圖示，在設定裡點「回復購買」。</p>
     <h3>免費額度怎麼算？</h3>
-    <p>前 3 份文件免費，每份文件頁數不限。刪除文件或重裝 App 不會把免費額度還回來。之後付一次就能無限使用，沒有訂閱。</p>
+    <p>前 10 份文件免費；還有免費額度時，每份文件頁數不限。刪除文件或重裝 App 不會把免費額度還回來。之後付一次就能無限使用，沒有訂閱。</p>
+    <p>免費額度用完後，做好的文件照樣能打開、分享、匯出，但不能再替現有的文件加頁：在「編輯頁面」點「加頁」會打開購買畫面。重拍或換掉某一頁不受影響；用「從這頁拆成新文件」拆出來的，每份算一份新文件。</p>
     <h3>我已經付費了，但還是被鎖住怎麼辦？</h3>
     <p>如果購買正在等待核准（例如「請求購買」），核准後 OnceScan 會自動解鎖。否則請確認網路連線，再點「回復購買」——在購買畫面上點，或點主畫面的齒輪圖示，在設定裡點都可以。</p>
     <h3>資料存在哪裡？</h3>
-    <p>存在你 iPhone 上的 OnceScan 裡。OnceScan 沒有帳號，本身也不會把任何東西傳出去，所以 App 裡的掃描不會同步到其他裝置。如果你打開了自動歸檔，每份掃描也會另存成 PDF 放進你選的資料夾；資料夾在 iCloud 雲碟的話，Apple 會像同步其他檔案一樣，把它同步到你的其他裝置。刪除 App 會刪掉 OnceScan 裡的掃描，但已經歸檔或分享出去的 PDF 不會被刪。</p>
-    <h3>怎麼打開自動歸檔？</h3>
-    <p>點主畫面的齒輪圖示，打開「自動歸檔」，選一個在 iCloud 雲碟或「我的 iPhone」裡的資料夾。之後每份掃描都會自動存成 PDF 放進去，依「分類方式」分好（依類型、類型＋年份、月份，或全部放同一層）。改名或換分類時，PDF 也會跟著改名、搬位置。OnceScan 不會覆寫或刪除已歸檔的 PDF，你在上面加的註記、簽名都會留著。打開之前就有的掃描，也會一起歸檔。</p>
+    <p>存在你 iPhone 上的 OnceScan 裡。OnceScan 沒有帳號，本身也不會把任何東西傳出去，所以 App 裡的掃描不會同步到其他裝置。如果你打開了「每份掃描自動存成 PDF 到資料夾」，每份掃描也會另存成 PDF 放進你選的資料夾；資料夾在 iCloud 雲碟的話，Apple 會像同步其他檔案一樣，把它同步到你的其他裝置。刪除 App 會刪掉 OnceScan 裡的掃描，但已經歸檔或分享出去的 PDF 不會被刪。</p>
+    <h3>怎麼讓每份掃描自動存到資料夾？</h3>
+    <p>點主畫面的齒輪圖示，在「自動存到資料夾」打開「每份掃描自動存成 PDF 到資料夾」，選一個在 iCloud 雲碟或「我的 iPhone」裡的資料夾。之後每份掃描都會自動存成 PDF 放進去，照「資料夾裡怎麼分」選的方式分好：「依類型」「依類型，再按年份分」「依年度，再按月份、類型分」「依月份」或「全部放同一個資料夾」。開始用標籤之後，還會多出四種：「依標籤，再按類型分」「依標籤，再按年份分」「依標籤，再按年份、類型分」「依標籤，再按月份分」。改名或換分類時，PDF 也會跟著改名、搬位置。OnceScan 不會覆寫已歸檔的 PDF，你在上面加的註記、簽名都會留著；編輯頁面時，原本的 PDF 會留在「舊版本」資料夾。只有打開「刪除時連資料夾的 PDF 一起刪」（選好資料夾後，會出現在「自動存到資料夾」裡）時，才會刪掉已歸檔的 PDF。打開之前就有的掃描，也會一起歸檔。</p>
     <h3>為什麼選不到 Google 雲端硬碟（或其他雲端硬碟）的資料夾？</h3>
     <p>部分雲端硬碟 App（例如 Google 雲端硬碟）不允許其他 App 存進它的資料夾，所以可能看不到或存不進去。這時請打開文件、點「分享 PDF」，存到那個 App。iCloud 雲碟和「我的 iPhone」一定可以用。如果歸檔突然失敗，到 OnceScan 的設定重新選一次資料夾就好。</p>
+    <h3>設定裡的「我是誰」是做什麼的？為什麼我自己開的發票算收入？</h3>
+    <p>在設定的「我是誰」填上你的名字、公司名或統編，一行一個。OnceScan 在發票、請款單上看到開立人是你，就知道這是你開出去的：檔名改用客戶的名字，並且算成收入。你付出去的收據、帳單算支出，其他文件兩邊都不算。</p>
+    <h3>怎麼把一份掃描標成收入或支出？</h3>
+    <p>打開那份掃描，在資訊卡把它標成收入、支出或不算。你選過的會一直留著，改名、換分類都不會變。匯出和試算表會把支出、收入分成兩行小計。</p>
+    <h3>一份掃描可以有好幾個標籤嗎？</h3>
+    <p>可以。在資訊卡加上任意幾個標籤，例如客戶、出差、小孩、報稅。在主畫面選取好幾份，可以一次加上或移除某個標籤。依標籤篩選時，有那個標籤的都會出現；依日期匯出也可以只匯出某個標籤。</p>
+    <h3>讀錯的金額、日期、稅額可以改嗎？</h3>
+    <p>可以。點資訊卡上的金額、日期或其他欄位就能改，檔名、小計、試算表都會用你改過的。</p>
+    <h3>怎麼匯出一個月、一季或一整年？</h3>
+    <p>主畫面打開選單，選「依日期匯出…」。選月份、季、年、會計年度或自訂日期，也可以只選某個分類或標籤。會得到一份合併 PDF，需要的話再加一份試算表（CSV）：日期、名稱、分類、金額、稅額、發票號碼、標籤，以及支出、收入的小計。</p>
+    <h3>可以匯入有密碼的 PDF 嗎？</h3>
+    <p>可以。照平常從「檔案」匯入，OnceScan 會請你輸入密碼。密碼只用來打開一次、不會被儲存；打開後的版本會存在 OnceScan 裡，之後不用再輸入密碼。匯入的 PDF 也會保留原始檔。</p>
+    <h3>怎麼把繳費期限加進行事曆？</h3>
+    <p>OnceScan 在帳單上讀到繳費期限時，會顯示在資訊卡上。點「加到行事曆」，會打開 Apple 的新增行程畫面，日期和檔名都已經填好，確認後點「加入」就好。OnceScan 不會讀你的行事曆。</p>
+    <h3>怎麼跟家人共用掃描？</h3>
+    <p>OnceScan 不會在 iPhone 之間同步，但歸檔資料夾可以透過 iCloud 雲碟共用：</p>
+    <ol>
+      <li>打開「檔案」App，進到 iCloud 雲碟，新增一個資料夾，例如「家裡的文件」。</li>
+      <li>長按這個資料夾，點「分享」。</li>
+      <li>在分享選項選「只有你邀請的人」和「可以更改」，再把邀請傳給家人（例如用訊息）。不同 iOS 版本的字可能略有不同。</li>
+      <li>回到 OnceScan，點齒輪圖示，打開「每份掃描自動存成 PDF 到資料夾」，選這個資料夾。</li>
+      <li>家人點開邀請一次之後，這個資料夾就會出現在他們「檔案」App 的 iCloud 雲碟裡，你掃的每份 PDF 都看得到。家人也用 OnceScan 的話，可以在自己的設定選同一個資料夾。</li>
+    </ol>
+    <p>打開「家人共享」的話，買一次，家庭群組裡每個人的 OnceScan 都會解鎖。</p>
+    <h3>Face ID 鎖會保護歸檔的 PDF 嗎？</h3>
+    <p>不會。鎖只保護 OnceScan 本身。歸檔資料夾裡的 PDF 和舊版本是「檔案」App 裡的一般檔案，能用你已解鎖 iPhone 的人都打得開。歸檔資料夾放在 iCloud 雲碟的話，可以在「設定」App 打開 iCloud 的「進階資料保護」。</p>
+    <h3>支援 VoiceOver 和大字嗎？</h3>
+    <p>支援。每個畫面都能用 VoiceOver 操作，也能把掃描念給你聽：誰開的、多少錢、幾號前要繳，或念出全文。「文字與朗讀」頁會照你設定的字級重新排版，頁面最多可放大 5 倍。</p>
     <h3>可以辨識哪些語言？</h3>
-    <p>英文、繁體中文、日文、德文、法文和西班牙文。文字辨識在你的 iPhone 上進行。</p>
+    <p>看得懂中文（繁體、簡體）、英文、日文、德文、法文、西班牙文、義大利文、葡萄牙文、荷蘭文、韓文和馬來文的單據。文字辨識在你的 iPhone 上進行。App 介面有繁體中文、英文、日文、德文四種。</p>
     <h3>PDF 裡的文字可以搜尋嗎？</h3>
     <p>可以。每份掃描匯出的都是可搜尋的 PDF：辨識出的文字會隱形嵌在裡面，在「檔案」、預覽程式或郵件打開 PDF，就能在裡面搜尋，也能選取、拷貝文字。「檔案」App 最上方的搜尋框只會找檔名；要一次搜尋所有掃描的內容，請用 OnceScan 裡的搜尋。</p>
   </section>
@@ -108,19 +167,48 @@
     <h2>日本語</h2>
     <div class="contact"><p>お問い合わせは <a href="mailto:oncescan.app@gmail.com">oncescan.app@gmail.com</a> まで。iPhoneの機種とiOSのバージョンをお書き添えください。通常2営業日以内に返信します。</p></div>
     <h3>購入を復元するには？</h3>
-    <p>購入時と同じApple AccountでApp Storeにサインインし、OnceScanの右上の「無料残り」をタップ（または新しい書類を作成）して、画面下部の「購入を復元」をタップしてください。メイン画面の歯車アイコンから、設定内の「購入を復元」をタップしても復元できます。</p>
+    <p>購入時と同じApple AccountでApp Storeにサインインし、OnceScanの右上の「無料残り○件」をタップ（または新しい書類を作成）して、画面下部の「購入を復元」をタップしてください。メイン画面の歯車アイコンから、設定内の「購入を復元」をタップしても復元できます。</p>
     <h3>無料枠は？</h3>
-    <p>最初の3件の書類が無料で、1件あたりのページ数に制限はありません。書類の削除や再インストールで無料枠は戻りません。その後は一度の支払いで無制限に使えます。サブスクはありません。</p>
+    <p>最初の10件の書類が無料で、無料枠が残っている間は1件あたりのページ数に制限はありません。書類の削除や再インストールで無料枠は戻りません。その後は一度の支払いで無制限に使えます。サブスクはありません。</p>
+    <p>無料枠を使い切っても、作った書類は開く・共有する・書き出すことができます。ただし、既存の書類にページを足すことはできなくなり、「ページを編集」で「ページを追加」をタップすると購入画面が開きます。ページの撮り直しや置き換えはそのまま使えます。「ここから新しい書類に分ける」で分けた書類は、それぞれ新しい1件として数えます。</p>
     <h3>支払い済みなのにロックされたままです。どうすればいいですか？</h3>
     <p>購入が承認待ち（「承認と購入のリクエスト」など）の場合は、承認されるとOnceScanが自動でロック解除されます。そうでない場合は、ネットワーク接続を確認して「購入を復元」をタップしてください。購入画面か、歯車アイコンから開く設定のどちらからでも行えます。</p>
     <h3>データはどこに保存されますか？</h3>
-    <p>お使いのiPhoneのOnceScan内です。アカウントはなく、App自体がどこかへ何かを送ることもないため、App内のスキャンがほかの端末と同期されることはありません。「自動で保存・整理」をオンにすると、スキャンごとにPDFが選んだフォルダにも保存されます。そのフォルダがiCloud Driveにあれば、ほかのファイルと同じようにAppleがほかの端末へ同期します。Appを削除するとOnceScan内のスキャンは消えますが、保存済みのPDFや共有したPDFは削除されません。</p>
-    <h3>自動で保存・整理するには？</h3>
-    <p>メイン画面の歯車アイコンをタップし、「自動で保存・整理」をオンにして、iCloud Driveか「このiPhone内」のフォルダを選んでください。以降はスキャンするたびにPDFとして保存され、「整理のしかた」で選んだ方法（種類別、種類と年別、月別、ひとつのフォルダ）で分けられます。名前や分類を変えるとPDFも移動します。OnceScanが保存済みのPDFを上書き・削除することはないので、書き込んだメモや署名も残ります。オンにする前のスキャンも、あわせて保存されます。</p>
+    <p>お使いのiPhoneのOnceScan内です。アカウントはなく、App自体がどこかへ何かを送ることもないため、App内のスキャンがほかの端末と同期されることはありません。「スキャンをPDFでフォルダに保存」をオンにすると、スキャンごとにPDFが選んだフォルダにも保存されます。そのフォルダがiCloud Driveにあれば、ほかのファイルと同じようにAppleがほかの端末へ同期します。Appを削除するとOnceScan内のスキャンは消えますが、保存済みのPDFや共有したPDFは削除されません。</p>
+    <h3>フォルダに自動で保存するには？</h3>
+    <p>メイン画面の歯車アイコンをタップし、「フォルダに自動保存」の「スキャンをPDFでフォルダに保存」をオンにして、iCloud Driveか「このiPhone内」のフォルダを選んでください。以降はスキャンするたびにPDFとして保存され、「フォルダ内の分け方」で選んだ方法（「種類別」「種類ごと、その中を年ごとに」「年度ごと、その中を月→種類ごとに」「月別」「すべて1つのフォルダに」）で分けられます。タグを使い始めると、「タグごと、その中を種類ごとに」「タグごと、その中を年ごとに」「タグごと、その中を年→種類ごとに」「タグごと、その中を月ごとに」の4つも選べるようになります。名前や分類を変えるとPDFも移動します。OnceScanが保存済みのPDFを上書きすることはないので、書き込んだメモや署名も残ります。ページを編集すると、元のPDFは「以前のバージョン」フォルダに残ります。保存済みのPDFが削除されるのは、「保存済みのPDFも削除」をオンにした場合だけです（フォルダを選ぶと「フォルダに自動保存」に表示されます）。オンにする前のスキャンも、あわせて保存されます。</p>
     <h3>Google ドライブ（ほかのクラウドドライブ）のフォルダを選べないのはなぜ？</h3>
     <p>Google ドライブなど一部のクラウドドライブAppは、ほかのAppからフォルダへの保存を許可していないため、表示されなかったり保存できなかったりします。その場合は書類を開いて「PDFを共有」からそのAppに保存してください。iCloud Driveと「このiPhone内」はいつでも使えます。保存がうまくいかなくなったときは、OnceScanの設定でフォルダを選び直してください。</p>
+    <h3>設定に自分の名前を入れるのはなぜ？自分の請求書が収入になるのはなぜ？</h3>
+    <p>設定の「あなたについて」に、ご自身の名前・会社名・登録番号を1行に1つずつ入力してください。請求書の発行元にそれが見つかると、OnceScanはご自身が発行したものだと判断し、取引先の名前で保存して収入として数えます。支払ったレシートや請求書は支出、それ以外はどちらにも数えません。</p>
+    <h3>スキャンを収入・支出に分けるには？</h3>
+    <p>スキャンを開き、カードで収入・支出・どちらでもない、のいずれかを選びます。選んだ内容は、名前や分類を変えてもそのまま残ります。書き出しと一覧表（CSV）では、支出と収入を別々に小計します。</p>
+    <h3>1つのスキャンに複数のタグをつけられますか？</h3>
+    <p>はい。カードでタグをいくつでもつけられます（取引先、出張、子ども、確定申告など）。メイン画面で複数のスキャンを選ぶと、まとめてタグを追加・削除できます。タグで絞り込むとそのタグがついたスキャンがすべて表示され、期間を指定した書き出しもタグで絞れます。</p>
+    <h3>読み取った金額・日付・税額は直せますか？</h3>
+    <p>はい。カードの金額や日付などをタップして直せます。名前・小計・一覧表には直した内容が使われます。</p>
+    <h3>月・四半期・年ごとに書き出すには？</h3>
+    <p>メイン画面のメニューから「期間を指定して書き出す…」を選びます。月、四半期、年、年度、または任意の期間を選び、必要なら種類やタグで絞ります。すべてのスキャンをまとめたPDFと、必要なら日付・名前・種類・金額・税額・伝票番号・タグの一覧表（CSV）が作られ、支出と収入の小計もつきます。</p>
+    <h3>パスワード付きのPDFを読み込めますか？</h3>
+    <p>はい。いつもどおり「ファイル」から読み込むと、パスワードを求められます。パスワードは開くために一度使うだけで保存しません。開いたものがOnceScanに保存されるので、次からはパスワードなしで開けます。読み込んだPDFは元のファイルも残ります。</p>
+    <h3>支払期限をカレンダーに入れるには？</h3>
+    <p>請求書から支払期限を読み取ると、カードに表示されます。「カレンダーに追加」をタップすると、日付と名前が入ったAppleの新規イベント画面が開くので、確認して「追加」をタップしてください。OnceScanがカレンダーを読むことはありません。</p>
+    <h3>家族とスキャンを共有するには？</h3>
+    <p>OnceScanはiPhone同士で同期しませんが、保存先フォルダをiCloud Driveで共有できます。</p>
+    <ol>
+      <li>「ファイル」AppでiCloud Driveを開き、フォルダを作ります（例：「家の書類」）。</li>
+      <li>フォルダを長押しして「共有」をタップします。</li>
+      <li>共有オプションで「参加依頼した人のみ」と「変更可能」を選び、家族に参加依頼を送ります（メッセージなど）。iOSのバージョンによって表示が少し違うことがあります。</li>
+      <li>OnceScanで歯車アイコンをタップし、「スキャンをPDFでフォルダに保存」をオンにして、そのフォルダを選びます。</li>
+      <li>家族が一度参加依頼を開けば、そのフォルダが家族の「ファイル」AppのiCloud Driveに表示され、スキャンしたPDFがすべて見られます。家族もOnceScanを使うなら、自分の設定で同じフォルダを選べます。</li>
+    </ol>
+    <p>ファミリー共有をオンにしていれば、一度の購入でファミリーグループ全員のOnceScanがロック解除されます。</p>
+    <h3>Face IDのロックは保存済みのPDFも守りますか？</h3>
+    <p>いいえ。ロックで守られるのはOnceScan自体です。保存先フォルダのPDFや以前のバージョンは「ファイル」Appの通常のファイルなので、ロックを解除したiPhoneを使える人なら開けます。保存先がiCloud Driveなら、「設定」AppでiCloudの「高度なデータ保護」をオンにできます。</p>
+    <h3>VoiceOverや大きな文字に対応していますか？</h3>
+    <p>はい。すべての画面がVoiceOverで操作でき、スキャンの読み上げもできます（差出人、金額、支払期限、または全文）。「テキストと読み上げ」では認識した文字を自分の文字サイズで画面幅に合わせて表示し、ページは最大5倍まで拡大できます。</p>
     <h3>どの言語を読み取れますか？</h3>
-    <p>英語、繁体字中国語、日本語、ドイツ語、フランス語、スペイン語です。文字認識はiPhone上で行われます。</p>
+    <p>日本語・英語・中国語（繁体字・簡体字）・ドイツ語・フランス語・スペイン語・イタリア語・ポルトガル語・オランダ語・韓国語・マレー語の書類を読み取れます。文字認識はiPhone上で行われます。Appの表示言語は日本語・英語・繁体字中国語・ドイツ語です。</p>
     <h3>PDFの中の文字は検索できますか？</h3>
     <p>はい。スキャンはすべて検索可能なPDFとして書き出されます。認識した文字が目に見えない形で埋め込まれるため、「ファイル」・プレビュー・メールでPDFを開けば、PDF内を検索でき、文字の選択・コピーもできます。「ファイル」Appの上部にある検索欄はファイル名だけを探します。すべてのスキャンの中身をまとめて検索するときは、OnceScanの検索を使ってください。</p>
   </section>
@@ -129,19 +217,48 @@
     <h2>Deutsch</h2>
     <div class="contact"><p>Fragen? Schreib an <a href="mailto:oncescan.app@gmail.com">oncescan.app@gmail.com</a> und nenne dein iPhone-Modell und deine iOS-Version. Wir antworten meist innerhalb von 2 Werktagen.</p></div>
     <h3>Wie stelle ich meinen Kauf wieder her?</h3>
-    <p>Melde dich im App Store mit demselben Apple Account an, mit dem du gekauft hast. Tippe in OnceScan oben rechts auf „gratis“ (oder erstelle ein neues Dokument) und dann unten auf „Kauf wiederherstellen“. Alternativ tippst du auf dem Hauptbildschirm auf das Zahnrad und wählst in den Einstellungen „Kauf wiederherstellen“.</p>
+    <p>Melde dich im App Store mit demselben Apple-Account an, mit dem du gekauft hast. Tippe in OnceScan oben rechts auf „Noch 10 gratis“ (die Zahl sinkt mit jedem Dokument) (oder erstelle ein neues Dokument) und dann unten auf „Kauf wiederherstellen“. Alternativ tippst du auf dem Hauptbildschirm auf das Zahnrad und wählst in den Einstellungen „Kauf wiederherstellen“.</p>
     <h3>Wie funktioniert das Gratiskontingent?</h3>
-    <p>Die ersten 3 Dokumente sind gratis, jedes mit beliebig vielen Seiten. Löschen oder Neuinstallieren gibt keine Gratisdokumente zurück. Danach schaltet eine einmalige Zahlung unbegrenzt viele Dokumente frei. Kein Abo.</p>
+    <p>Die ersten 10 Dokumente sind gratis, und solange du noch Gratisdokumente hast, jedes mit beliebig vielen Seiten. Löschen oder Neuinstallieren gibt keine Gratisdokumente zurück. Danach schaltet eine einmalige Zahlung unbegrenzt viele Dokumente frei. Kein Abo.</p>
+    <p>Sind die Gratisdokumente aufgebraucht, kannst du alles Vorhandene weiter öffnen, teilen und exportieren, aber einem bestehenden Dokument keine Seiten mehr hinzufügen: „Seiten hinzufügen“ unter „Seiten bearbeiten“ öffnet dann den Kaufbildschirm. Eine Seite neu aufnehmen oder ersetzen bleibt gratis. Teilst du ein Dokument mit „Ab hier neues Dokument“, zählt jeder abgetrennte Teil als neues Dokument.</p>
     <h3>Ich habe bezahlt, aber es ist weiterhin gesperrt. Was tun?</h3>
     <p>Wenn der Kauf noch auf Genehmigung wartet (zum Beispiel „Bitten zu kaufen“), schaltet OnceScan sich nach der Genehmigung von selbst frei. Prüfe sonst deine Internetverbindung und tippe auf „Kauf wiederherstellen“ – entweder auf dem Kaufbildschirm oder über das Zahnrad in den Einstellungen.</p>
     <h3>Wo werden meine Scans gespeichert?</h3>
-    <p>In OnceScan auf deinem iPhone. Es gibt kein Konto, und OnceScan selbst sendet nichts irgendwohin – Scans in der App werden also nicht mit anderen Geräten synchronisiert. Wenn du die automatische Ablage einschaltest, wird jeder Scan zusätzlich als PDF in deinem gewählten Ordner gespeichert; liegt er in iCloud Drive, synchronisiert Apple ihn wie jede andere Datei auf deine anderen Geräte. Wenn du die App löschst, werden die Scans in OnceScan gelöscht, bereits abgelegte oder geteilte PDFs aber nicht.</p>
-    <h3>Wie schalte ich die automatische Ablage ein?</h3>
-    <p>Tippe auf dem Hauptbildschirm auf das Zahnrad, schalte „Scans automatisch ablegen“ ein und wähle einen Ordner in iCloud Drive oder „Auf meinem iPhone“. Ab dann wird jeder Scan dort als PDF gespeichert, sortiert nach deiner Wahl unter „Sortieren nach“ (nach Typ, nach Typ und Jahr, nach Monat oder alles in einem Ordner). Benennst du einen Scan um oder änderst die Kategorie, wird das PDF verschoben. OnceScan überschreibt oder löscht abgelegte PDFs nie, Notizen oder Unterschriften darin bleiben erhalten. Auch Scans, die du vorher gemacht hast, werden mit abgelegt.</p>
+    <p>In OnceScan auf deinem iPhone. Es gibt kein Konto, und OnceScan selbst sendet nichts irgendwohin – Scans in der App werden also nicht mit anderen Geräten synchronisiert. Wenn du „Jeden Scan als PDF im Ordner sichern“ einschaltest, wird jeder Scan zusätzlich als PDF in deinem gewählten Ordner gespeichert; liegt er in iCloud Drive, synchronisiert Apple ihn wie jede andere Datei auf deine anderen Geräte. Wenn du die App löschst, werden die Scans in OnceScan gelöscht, bereits abgelegte oder geteilte PDFs aber nicht.</p>
+    <h3>Wie sichere ich jeden Scan automatisch in einem Ordner?</h3>
+    <p>Tippe auf dem Hauptbildschirm auf das Zahnrad, schalte unter „In einem Ordner sichern“ die Option „Jeden Scan als PDF im Ordner sichern“ ein und wähle einen Ordner in iCloud Drive oder „Auf meinem iPhone“. Ab dann wird jeder Scan dort als PDF gespeichert, sortiert nach deiner Wahl unter „So werden PDFs sortiert“: „Nach Art“, „Nach Art, darin nach Jahr“, „Nach Jahr, darin nach Monat und Art“, „Nach Monat“ oder „Alles in einem Ordner“. Sobald du Schlagwörter verwendest, kommen vier weitere dazu: „Nach Schlagwort, darin nach Art“, „Nach Schlagwort, darin nach Jahr“, „Nach Schlagwort, darin nach Jahr und Art“ und „Nach Schlagwort, darin nach Monat“. Benennst du einen Scan um oder änderst die Kategorie, wird das PDF verschoben. OnceScan überschreibt abgelegte PDFs nie, Notizen oder Unterschriften darin bleiben erhalten; bearbeitest du die Seiten, bleibt das frühere PDF im Ordner „Ältere Versionen“. Gelöscht wird ein abgelegtes PDF nur, wenn du „Abgelegte PDFs mitlöschen“ einschaltest; die Option erscheint unter „In einem Ordner sichern“, sobald ein Ordner gewählt ist. Auch Scans, die du vorher gemacht hast, werden mit abgelegt.</p>
     <h3>Warum kann ich keinen Ordner in Google Drive (oder einer anderen Cloud) wählen?</h3>
     <p>Manche Cloud-Apps wie Google Drive lassen andere Apps nicht in ihre Ordner speichern; sie erscheinen dann nicht oder nehmen keine Dateien an. Öffne in diesem Fall ein Dokument, tippe auf „PDF teilen“ und sichere es in dieser App. iCloud Drive und „Auf meinem iPhone“ funktionieren immer. Klappt die Ablage nicht mehr, wähle den Ordner in den OnceScan-Einstellungen neu.</p>
+    <h3>Wozu trage ich in den Einstellungen meinen eigenen Namen ein? Warum zählt meine eigene Rechnung als Einnahme?</h3>
+    <p>Trag in den Einstellungen unter „Über dich“ deinen Namen, deinen Firmennamen oder deine Steuernummer ein, eine Angabe pro Zeile. Findet OnceScan eine davon als Absender einer Rechnung, weiß es, dass du sie geschrieben hast: Der Scan wird nach deinem Kunden benannt und als Einnahme gezählt. Kassenbons und Rechnungen, die du bezahlst, zählen als Ausgabe, alles andere zählt nicht.</p>
+    <h3>Wie markiere ich einen Scan als Einnahme oder Ausgabe?</h3>
+    <p>Öffne den Scan und markiere ihn auf seiner Karte als Einnahme, Ausgabe oder „zählt nicht“. Deine Wahl bleibt, auch wenn du den Scan umbenennst oder die Kategorie änderst. Exporte und ihre Tabellen zeigen Ausgaben und Einnahmen als zwei getrennte Summen.</p>
+    <h3>Kann ein Scan mehrere Schlagwörter haben?</h3>
+    <p>Ja. Gib einem Scan auf seiner Karte so viele Schlagwörter, wie du möchtest, etwa Kunde, Reise, Kind oder Steuer. Wählst du auf dem Hauptbildschirm mehrere Scans aus, kannst du ein Schlagwort bei allen auf einmal hinzufügen oder entfernen. Filterst du nach einem Schlagwort, siehst du alle Scans damit, und auch der Export nach Datum lässt sich auf ein Schlagwort beschränken.</p>
+    <h3>Kann ich einen erkannten Betrag, ein Datum oder die Steuer korrigieren?</h3>
+    <p>Ja. Tippe auf der Karte des Scans auf Betrag, Datum oder eine andere Angabe und korrigiere sie. Name, Summen und Tabelle verwenden dann deine Korrektur.</p>
+    <h3>Wie exportiere ich einen Monat, ein Quartal oder ein Jahr?</h3>
+    <p>Öffne auf dem Hauptbildschirm das Menü und wähle „Nach Datum exportieren …“. Wähle Monat, Quartal, Jahr, Geschäftsjahr oder eigene Daten und auf Wunsch eine Kategorie oder ein Schlagwort. Du bekommst ein PDF mit allen Scans und, wenn du willst, eine Tabelle (CSV) mit Datum, Name, Kategorie, Betrag, Steuer, Rechnungsnummer und Schlagwörtern sowie Summen für Ausgaben und Einnahmen.</p>
+    <h3>Kann ich ein passwortgeschütztes PDF importieren?</h3>
+    <p>Ja. Importiere es wie gewohnt aus Dateien; OnceScan fragt nach dem Passwort. Das Passwort wird nur einmal zum Öffnen verwendet und nicht gespeichert. Die geöffnete Fassung wird in OnceScan gesichert, sodass sich der Scan danach ohne Passwort öffnet. Importierte PDFs behalten außerdem ihre Originaldatei.</p>
+    <h3>Wie trage ich ein Fälligkeitsdatum in meinen Kalender ein?</h3>
+    <p>Liest OnceScan auf einer Rechnung ein Fälligkeitsdatum, steht es auf der Karte des Scans. Tippe auf „Zum Kalender hinzufügen“: Apples Fenster für ein neues Ereignis öffnet sich mit Datum und Name. Prüfe es und tippe auf „Hinzufügen“. OnceScan liest deinen Kalender nicht.</p>
+    <h3>Wie teile ich Scans mit meiner Familie?</h3>
+    <p>OnceScan synchronisiert nicht zwischen iPhones, aber den Ablageordner kannst du über iCloud Drive teilen:</p>
+    <ol>
+      <li>Öffne in der Dateien-App iCloud Drive und erstelle einen Ordner, zum Beispiel „Familienunterlagen“.</li>
+      <li>Halte den Ordner gedrückt und tippe auf „Teilen“.</li>
+      <li>Wähle in den Freigabeoptionen „Nur eingeladene Personen“ und „Kann Änderungen vornehmen“ und schick die Einladung an deine Familie (zum Beispiel per Nachrichten). Je nach iOS-Version kann die Beschriftung etwas abweichen.</li>
+      <li>Tippe in OnceScan auf das Zahnrad, schalte „Jeden Scan als PDF im Ordner sichern“ ein und wähle diesen Ordner.</li>
+      <li>Sobald deine Familie die Einladung einmal geöffnet hat, erscheint der Ordner in ihrer Dateien-App unter iCloud Drive, mit jedem PDF, das du scannst. Nutzt sie auch OnceScan, kann sie in den eigenen Einstellungen denselben Ordner wählen.</li>
+    </ol>
+    <p>Ist die Familienfreigabe eingeschaltet, schaltet ein Kauf OnceScan für alle in deiner Familiengruppe frei.</p>
+    <h3>Schützt die Face-ID-Sperre auch abgelegte PDFs?</h3>
+    <p>Nein. Die Sperre schützt OnceScan selbst. PDFs im Ablageordner und ihre älteren Versionen sind normale Dateien in der Dateien-App; wer dein entsperrtes iPhone benutzen kann, kann sie öffnen. Liegt dein Ablageordner in iCloud Drive, kannst du in der Einstellungen-App den erweiterten Datenschutz für iCloud einschalten.</p>
+    <h3>Funktioniert OnceScan mit VoiceOver und großer Schrift?</h3>
+    <p>Ja. Jeder Bildschirm funktioniert mit VoiceOver, und Scans lassen sich vorlesen: von wem, wie viel und bis wann zu zahlen – oder der ganze Text. „Text und Vorlesen“ zeigt das Erkannte in deiner Schriftgröße, passend umbrochen, und Seiten lassen sich bis zu 5-fach vergrößern.</p>
     <h3>Welche Sprachen kann OnceScan lesen?</h3>
-    <p>Englisch, traditionelles Chinesisch, Japanisch, Deutsch, Französisch und Spanisch. Die Texterkennung läuft auf deinem iPhone.</p>
+    <p>OnceScan liest Belege und Briefe auf Deutsch, Englisch, Chinesisch (traditionell und vereinfacht), Japanisch, Französisch, Spanisch, Italienisch, Portugiesisch, Niederländisch, Koreanisch und Malaiisch. Die Texterkennung läuft auf deinem iPhone. Die App selbst gibt es auf Deutsch, Englisch, Japanisch und traditionellem Chinesisch.</p>
     <h3>Kann ich im PDF suchen?</h3>
     <p>Ja. Jeder Scan wird als durchsuchbares PDF exportiert: Der erkannte Text ist unsichtbar eingebettet, sodass du das PDF in Dateien, Vorschau oder Mail öffnen und darin suchen sowie Text markieren und kopieren kannst. Das Suchfeld oben in der Dateien-App findet nur Dateinamen; um den Text aller Scans auf einmal zu durchsuchen, nutze die Suche in OnceScan.</p>
   </section>

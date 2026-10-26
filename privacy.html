@@ -44,12 +44,14 @@
   .summary p { margin: 0; font-weight: 600; }
   nav { font-size: 15px; color: var(--muted); }
   nav a { margin-right: 12px; white-space: nowrap; }
+  .trader { background: var(--card); border-radius: 12px; padding: 12px 16px; }
+  .trader p { margin: 0 0 4px; }
 </style>
 </head>
 <body>
 <main>
   <h1>OnceScan Privacy Policy</h1>
-  <p class="meta">Developer: Yu-Kai Wang · Effective date: October 19, 2026</p>
+  <p class="meta">Developer: Yu-Kai Wang · Effective date: October 26, 2026</p>
   <nav><a href="#en">English</a><a href="#zh-Hant">繁體中文</a><a href="#ja">日本語</a><a href="#de">Deutsch</a></nav>
 
   <section id="en" lang="en">
@@ -61,23 +63,35 @@
 
     <h3>How your documents are processed</h3>
     <ul>
-      <li>Scanning, straightening, clean-up, text recognition (OCR), automatic naming and sorting all run on your iPhone.</li>
-      <li>The camera is used only while you scan. Photos are chosen with Apple's photo picker; OnceScan only sees the photos you pick.</li>
-      <li>Your scans, page images and recognized text are stored on your iPhone, inside the app.</li>
+      <li>Scanning, straightening, clean-up, text recognition (OCR), reading e-invoice QR codes, automatic naming and sorting all run on your iPhone.</li>
+      <li>The camera is used only while you scan. Photos are chosen with Apple's photo picker; OnceScan only sees the photos you pick. OnceScan asks to add to your Photos only if you share a page as a photo and choose "Save Image".</li>
+      <li>Your scans, page images, recognized text, labels, notes and the original file of an imported PDF are stored on your iPhone, inside the app. iOS encrypts them. With "Strongest file protection" turned on in Settings, they can't be read at all while your iPhone is locked, not even by OnceScan. This covers the scans, pages and text the app stores. It does not cover small settings kept in the app's preferences (such as the labels remembered for each shop, and the names and tax IDs in "Who You Are"), nor PDFs already in your filing folder or its Old Versions folder.</li>
+      <li>If you fill in "Who You Are" in Settings (your name, company or tax ID), it stays in the app's settings on your iPhone and is only used to recognize the invoices you send out.</li>
+      <li>If you import a password-protected PDF, the password is used once to open it and is not stored; the unlocked copy is kept inside OnceScan like any other scan.</li>
+      <li>"Add to Calendar" opens Apple's new-event screen with the due date filled in. OnceScan does not read your calendar, and nothing is added unless you save it there.</li>
+      <li>Text you copy from a scan goes to the iPhone's clipboard. OnceScan keeps it on this device and lets it expire after a few minutes.</li>
     </ul>
 
-    <h3>Automatic filing (off unless you turn it on)</h3>
-    <p>If you turn on automatic filing, OnceScan saves each scan as a PDF into the folder you chose in the Files app. If that folder is on your iPhone, the PDFs stay on your iPhone. If it is in iCloud Drive, Apple syncs those PDFs like any other file in iCloud Drive, under Apple's terms. If it is in another cloud drive app, that app handles them under its own terms. OnceScan itself never uploads anything.</p>
+    <h3>Saving to a folder (off unless you turn it on)</h3>
+    <p>If you turn on "Save every scan as a PDF in a folder", OnceScan saves each scan as a PDF into the folder you chose in the Files app. If that folder is on your iPhone, the PDFs stay on your iPhone. If it is in iCloud Drive, Apple syncs those PDFs like any other file in iCloud Drive, under Apple's terms. If it is in another cloud drive app, that app handles them under its own terms. OnceScan itself never uploads anything.</p>
+    <p>When you edit the pages of a filed scan, OnceScan does not overwrite the PDF already in your folder (it may carry your notes or signature). The earlier PDF is moved, unchanged, into an "Old Versions" folder next to it, and the new pages are saved as a new PDF. <!-- VERIFY after merge: limit chosen by group B (FiledVersions) -->OnceScan keeps up to 3 earlier versions of each scan there and removes older ones beyond that. You can delete them in the Files app at any time.</p>
+    <p>Filed PDFs and old versions are ordinary files: the Face ID lock in OnceScan does not protect them. Anyone who can open the Files app on your unlocked iPhone can open them, and the text inside them can be searched.</p>
 
     <h3>Sharing</h3>
     <p>Apart from your filing folder, a document leaves the app only when you share it yourself, for example to Mail, Messages or the Files app. What happens next is up to the app or service you choose.</p>
 
     <h3>Deleting your data</h3>
-    <p>Delete a document in the app, or delete the app to remove all of your scans inside OnceScan. PDFs already saved to your filing folder, or shared elsewhere, are not deleted; they are ordinary files you can delete in the Files app. One small number stays in your iPhone's Keychain: how many documents have been created, so the free allowance is not reset by reinstalling. It contains no document content and never leaves your device.</p>
+    <p>A scan you delete first goes to Recently Deleted, where it stays for 30 days so you can recover it. After 30 days it is deleted for good the next time you open OnceScan; you can also delete it for good right away in Recently Deleted. Deleting the app removes all of your scans inside OnceScan.</p>
+    <p>PDFs already saved to your filing folder, their old versions, and anything you shared are not deleted with the scan, unless you turn on "Delete filed PDFs too". They are ordinary files you can delete in the Files app.</p>
+    <p>One small number stays in your iPhone's Keychain: how many documents have been created, so the free allowance is not reset by reinstalling. It contains no document content and is never sent to us. Like other Keychain items, it is included in your encrypted iPhone backup and moves to a new iPhone that you set up from that backup.</p>
     <p>If you use iCloud Backup or back up to a computer, your device backup may include OnceScan's data, under Apple's terms.</p>
 
     <h3>Purchases</h3>
     <p>The one-time purchase is handled by Apple through the App Store. We do not receive your name, payment details or Apple Account information.</p>
+
+    <h3>If you email us</h3>
+    <p>If you write to our support address, we receive your email address and whatever you put in the message or attach. We use it only to answer you, keep it only as long as the conversation needs, and delete it when you ask. The mailbox is hosted by Google (Gmail), so Google processes these emails under its terms. The legal basis is answering your request (GDPR Art. 6(1)(b)) and our legitimate interest in giving support (Art. 6(1)(f)).</p>
+    <p>If you are in the EU, the UK or a country with similar laws, you have the right to access, correct or delete the personal data we hold about you (which is only support emails), to restrict or object to its use, and to receive it in a portable format. Write to the address below. You also have the right to lodge a complaint with a data protection supervisory authority, for example the one where you live.</p>
 
     <h3>Children</h3>
     <p>OnceScan does not collect data from anyone, including children.</p>
@@ -85,8 +99,12 @@
     <h3>Changes</h3>
     <p>If this policy changes, the new version will be posted on this page with a new effective date.</p>
 
-    <h3>Contact</h3>
-    <p>Yu-Kai Wang · <a href="mailto:oncescan.app@gmail.com">oncescan.app@gmail.com</a></p>
+    <h3>Contact and trader information (EU)</h3>
+    <div class="trader">
+      <p>Developer and data controller: Yu-Kai Wang</p>
+      <p>Address: 12F., No. 31, Chengzhou 6th Rd., Wugu Dist., New Taipei City 248, Taiwan</p>
+      <p>Email: <a href="mailto:oncescan.app@gmail.com">oncescan.app@gmail.com</a></p>
+    </div>
   </section>
 
   <section id="zh-Hant" lang="zh-Hant">
@@ -94,14 +112,26 @@
     <div class="summary"><p>OnceScan 不收集任何資料，本身也不會把任何東西傳出去。你的掃描只會出現在你指定的地方。</p></div>
     <ul>
       <li>沒有帳號、不用登入；沒有分析、廣告或追蹤 SDK；我們沒有接收你資料的伺服器。App 本身不連任何網路，唯一的連線是 Apple 的 App Store 處理購買。</li>
-      <li>掃描、拉正、清理畫面、文字辨識、自動命名與分類，全部在你的 iPhone 上處理。相機只在掃描時使用；照片由 Apple 的照片挑選器選取，App 只看得到你挑的那幾張。</li>
-      <li>掃描、頁面影像與辨識出的文字都存在你的 iPhone 上、App 裡面。</li>
-      <li><strong>自動歸檔（預設關閉）：</strong>你打開之後，每份掃描會存成 PDF，放進你在「檔案」App 選的資料夾。資料夾在「我的 iPhone」，PDF 就留在手機上；在 iCloud 雲碟，Apple 會像同步其他檔案一樣同步它們（依 Apple 條款）；在其他雲端硬碟 App，則由該 App 依它的條款處理。OnceScan 自己不會上傳任何東西。</li>
+      <li>掃描、拉正、清理畫面、文字辨識、讀電子發票 QR code、自動命名與分類，全部在你的 iPhone 上處理。相機只在掃描時使用；照片由 Apple 的照片挑選器選取，App 只看得到你挑的那幾張。只有你把頁面分享成照片、並選「儲存影像」時，OnceScan 才會請求把照片加入「照片」。</li>
+      <li>掃描、頁面影像、辨識出的文字、標籤、備註，以及匯入 PDF 的原始檔，都存在你的 iPhone 上、App 裡面，由 iOS 加密。在設定打開「最高檔案保護」後，iPhone 鎖定時連 OnceScan 也讀不到。它保護的是 App 存的掃描、頁面和文字；不包括存在 App 偏好設定裡的小設定（例如記住每家店的標籤、「我是誰」裡的名字和統編），也不包括已經存到歸檔資料夾或「舊版本」資料夾的 PDF。</li>
+      <li>你在設定填的「我是誰」（名字、公司名、統編）只存在這支 iPhone 的 App 設定裡，只用來認出你自己開出去的發票。</li>
+      <li>匯入有密碼的 PDF 時，密碼只用來打開一次、不會被儲存；打開後的檔案會像其他掃描一樣存在 OnceScan 裡。</li>
+      <li>「加到行事曆」會打開 Apple 的新增行程畫面並帶入繳費期限。OnceScan 不會讀你的行事曆，你沒按儲存就不會加進去。</li>
+      <li>從掃描拷貝的文字會進 iPhone 的剪貼板；OnceScan 只讓它留在這支裝置上，幾分鐘後自動清掉。</li>
+      <li><strong>自動存到資料夾（預設關閉）：</strong>你打開「每份掃描自動存成 PDF 到資料夾」之後，每份掃描會存成 PDF，放進你在「檔案」App 選的資料夾。資料夾在「我的 iPhone」，PDF 就留在手機上；在 iCloud 雲碟，Apple 會像同步其他檔案一樣同步它們（依 Apple 條款）；在其他雲端硬碟 App，則由該 App 依它的條款處理。OnceScan 自己不會上傳任何東西。</li>
+      <li><strong>舊版本：</strong>你編輯已歸檔掃描的頁面時，OnceScan 不會覆寫資料夾裡原本的 PDF（上面可能有你的註記或簽名），而是把它原封不動移到旁邊的「舊版本」資料夾，新的頁面另存一份新 PDF。<!-- VERIFY after merge: B 組舊版本上限 -->每份掃描最多保留 3 個舊版本，更舊的會移除。你隨時可以在「檔案」App 自己刪。</li>
+      <li>已歸檔的 PDF 和舊版本是一般檔案，<strong>不受 OnceScan 的 Face ID 鎖保護</strong>：能打開你已解鎖 iPhone「檔案」App 的人就能打開，裡面的文字也搜得到。</li>
       <li>除了歸檔資料夾，只有你自己按分享（例如郵件、訊息、「檔案」App）時，文件才會離開 App。</li>
-      <li>在 App 裡刪除文件或刪除 App，會刪掉 OnceScan 裡的所有掃描；但已經歸檔到資料夾或分享出去的 PDF 不會被刪，它們是一般檔案，可以在「檔案」App 自己刪。唯一留下的是 Keychain 裡一個「已建立幾份文件」的數字（避免重裝重置免費額度），不含任何文件內容，也不會離開你的裝置。若你使用 iCloud 備份或電腦備份，備份中可能包含 OnceScan 的資料，依 Apple 條款處理。</li>
+      <li><strong>刪除：</strong>刪掉的掃描會先放進「最近刪除」30 天，期間可以救回；30 天後，下次打開 OnceScan 時會永久刪除，你也可以在「最近刪除」裡馬上永久刪除。刪除 App 會刪掉 OnceScan 裡的所有掃描。已經歸檔到資料夾的 PDF、舊版本和分享出去的檔案不會跟著刪，除非你在設定打開「刪除時連資料夾的 PDF 一起刪」；它們是一般檔案，可以在「檔案」App 自己刪。</li>
+      <li>Keychain 裡會留一個「已建立幾份文件」的數字（避免重裝重置免費額度），不含任何文件內容，也不會傳給我們。它跟其他 Keychain 項目一樣，會包含在你 iPhone 的加密備份裡，用備份設定新 iPhone 時也會一起搬過去。若你使用 iCloud 備份或電腦備份，備份中可能包含 OnceScan 的資料，依 Apple 條款處理。</li>
       <li>購買由 Apple 透過 App Store 處理，我們不會收到你的姓名、付款資料或 Apple 帳號資訊。</li>
+      <li><strong>寄信給客服時：</strong>我們會收到你的 email 地址和信件內容、附件，只用來回覆你，對話結束不再需要就刪除，你要求刪除也會刪。信箱由 Google（Gmail）代管，信件由 Google 依其條款處理。若你在歐盟、英國或有類似法律的地方，你有權查閱、更正、刪除我們持有的你的個資（也就是客服信件），限制或反對使用，以及要求可攜的副本；也有權向個資保護主管機關（例如你居住地的機關）申訴。</li>
     </ul>
-    <p>聯絡：Yu-Kai Wang · <a href="mailto:oncescan.app@gmail.com">oncescan.app@gmail.com</a></p>
+    <div class="trader">
+      <p>開發者（個資控管者）：Yu-Kai Wang</p>
+      <p>地址：248 新北市五股區成洲六路 31 號 12 樓</p>
+      <p>Email：<a href="mailto:oncescan.app@gmail.com">oncescan.app@gmail.com</a></p>
+    </div>
   </section>
 
   <section id="ja" lang="ja">
@@ -109,14 +139,26 @@
     <div class="summary"><p>OnceScanはデータを一切収集せず、App自体がどこかへ何かを送ることもありません。スキャンが置かれるのは、ご自身が指定した場所だけです。</p></div>
     <ul>
       <li>アカウント・ログインは不要です。分析、広告、トラッキングのSDKは含まれておらず、データを受け取るサーバーもありません。App自体はネットワーク通信を行わず、唯一の通信はApp Storeでの購入処理（Appleが実施）です。</li>
-      <li>スキャン、傾き補正、画像の整え、文字認識、自動の名前づけと分類はすべてiPhone上で処理されます。カメラはスキャン中のみ使用し、写真はAppleの写真ピッカーで選んだものだけを読み込みます。</li>
-      <li>スキャン、ページ画像、認識した文字はiPhone内のApp内に保存されます。</li>
-      <li><strong>自動で保存・整理（初期設定はオフ）：</strong>オンにすると、スキャンごとにPDFが「ファイル」Appで選んだフォルダに保存されます。フォルダが「このiPhone内」ならPDFはiPhoneの中にとどまります。iCloud Driveにある場合は、ほかのファイルと同じようにAppleが同期します（Appleの規約に基づきます）。ほかのクラウドドライブAppの場合は、そのAppの規約に基づいて扱われます。OnceScan自体が何かをアップロードすることはありません。</li>
+      <li>スキャン、傾き補正、画像の整え、文字認識、電子発票のQRコードの読み取り、自動の名前づけと分類はすべてiPhone上で処理されます。カメラはスキャン中のみ使用し、写真はAppleの写真ピッカーで選んだものだけを読み込みます。「写真」への追加を求めるのは、ページを写真で共有して「画像を保存」を選んだときだけです。</li>
+      <li>スキャン、ページ画像、認識した文字、タグ、メモ、読み込んだPDFの元ファイルはiPhone内のApp内に保存され、iOSによって暗号化されます。設定で「最高レベルのファイル保護」をオンにすると、iPhoneのロック中はOnceScanも含めて読み取れなくなります。対象はAppが保存するスキャン・ページ・文字です。Appの設定に保存される小さな項目（お店ごとに覚えたタグ、「あなたについて」の名前や登録番号など）や、保存先フォルダ・「以前のバージョン」フォルダにあるPDFは対象外です。</li>
+      <li>設定の「あなたについて」に入力したご自身の名前・会社名・登録番号は、このiPhoneのAppの設定にだけ保存され、ご自身が発行した請求書を見分けるためだけに使います。</li>
+      <li>パスワード付きのPDFを読み込むとき、パスワードは開くために一度使うだけで保存しません。開いたファイルはほかのスキャンと同じようにOnceScan内に保存されます。</li>
+      <li>「カレンダーに追加」は、支払期限を入れたAppleの新規イベント画面を開きます。OnceScanがカレンダーを読むことはなく、保存しない限り追加されません。</li>
+      <li>スキャンからコピーした文字はiPhoneのクリップボードに入ります。OnceScanはこの端末だけに置き、数分で消えるようにしています。</li>
+      <li><strong>フォルダに自動保存（初期設定はオフ）：</strong>「スキャンをPDFでフォルダに保存」をオンにすると、スキャンごとにPDFが「ファイル」Appで選んだフォルダに保存されます。フォルダが「このiPhone内」ならPDFはiPhoneの中にとどまります。iCloud Driveにある場合は、ほかのファイルと同じようにAppleが同期します（Appleの規約に基づきます）。ほかのクラウドドライブAppの場合は、そのAppの規約に基づいて扱われます。OnceScan自体が何かをアップロードすることはありません。</li>
+      <li><strong>以前のバージョン：</strong>保存済みのスキャンのページを編集すると、OnceScanはフォルダ内の元のPDF（メモや署名が入っているかもしれません）を上書きせず、そのまま隣の「以前のバージョン」フォルダに移し、新しいページを新しいPDFとして保存します。<!-- VERIFY after merge: B 組舊版本上限 -->1件のスキャンにつき以前のバージョンは3つまで残し、それより古いものは削除します。「ファイル」Appからいつでも削除できます。</li>
+      <li>保存済みのPDFと以前のバージョンは通常のファイルなので、<strong>OnceScanのFace IDロックでは保護されません</strong>。ロックを解除したiPhoneで「ファイル」Appを開ける人なら誰でも開け、中の文字も検索できます。</li>
       <li>保存先フォルダ以外で書類がAppの外に出るのは、ご自身で共有したとき（メール、メッセージ、「ファイル」Appなど）だけです。</li>
-      <li>App内で書類を削除するか、Appを削除すると、OnceScan内のスキャンはすべて消えます。ただし、保存先フォルダに保存済みのPDFや共有したPDFは削除されません。通常のファイルなので、「ファイル」Appから削除できます。キーチェーンには作成済み書類の数（再インストールで無料枠がリセットされないため）だけが残りますが、書類の内容は含まず、端末の外には出ません。iCloudバックアップやコンピュータへのバックアップを使っている場合、バックアップにOnceScanのデータが含まれることがあります（Appleの規約に基づきます）。</li>
+      <li><strong>削除：</strong>削除したスキャンはまず「最近削除した項目」に30日間残り、その間は元に戻せます。30日が過ぎると、次にOnceScanを開いたときに完全に削除されます。「最近削除した項目」からすぐに完全削除することもできます。Appを削除すると、OnceScan内のスキャンはすべて消えます。保存先フォルダのPDF、以前のバージョン、共有したファイルは、設定で「保存済みのPDFも削除」をオンにしない限り削除されません。通常のファイルなので、「ファイル」Appから削除できます。</li>
+      <li>キーチェーンには作成済み書類の数（再インストールで無料枠がリセットされないため）だけが残ります。書類の内容は含まず、私たちに送られることもありません。ほかのキーチェーン項目と同じく、iPhoneの暗号化バックアップに含まれ、そのバックアップから設定した新しいiPhoneにも引き継がれます。iCloudバックアップやコンピュータへのバックアップを使っている場合、バックアップにOnceScanのデータが含まれることがあります（Appleの規約に基づきます）。</li>
       <li>購入はApp Storeを通じてAppleが処理します。お名前、支払い情報、Apple Accountの情報を私たちが受け取ることはありません。</li>
+      <li><strong>サポートにメールを送ったとき：</strong>メールアドレスと、メールの内容・添付ファイルを受け取ります。返信のためだけに使い、やり取りに必要な間だけ保管し、ご依頼があれば削除します。メールボックスはGoogle（Gmail）が管理しており、メールはGoogleの規約に基づいて処理されます。EU・英国など同様の法律がある地域にお住まいの場合、私たちが保有する個人データ（サポートのメールのみ）の開示・訂正・削除、利用の制限・異議、持ち運び可能な形式での提供を求める権利と、データ保護の監督機関（お住まいの地域の機関など）に苦情を申し立てる権利があります。</li>
     </ul>
-    <p>連絡先：Yu-Kai Wang · <a href="mailto:oncescan.app@gmail.com">oncescan.app@gmail.com</a></p>
+    <div class="trader">
+      <p>開発者（データ管理者）：Yu-Kai Wang</p>
+      <p>住所：12F., No. 31, Chengzhou 6th Rd., Wugu Dist., New Taipei City 248, Taiwan（248 新北市五股區成洲六路 31 號 12 樓）</p>
+      <p>メール：<a href="mailto:oncescan.app@gmail.com">oncescan.app@gmail.com</a></p>
+    </div>
   </section>
 
   <section id="de" lang="de">
@@ -124,14 +166,26 @@
     <div class="summary"><p>OnceScan erhebt keinerlei Daten und sendet selbst nichts irgendwohin. Deine Scans landen nur dort, wo du sie haben willst.</p></div>
     <ul>
       <li>Kein Konto, keine Anmeldung. Keine Analyse-, Werbe- oder Tracking-SDKs und keine Server, die deine Daten empfangen. Die App baut selbst keine Netzwerkverbindungen auf; die einzige Verbindung ist der Kauf über Apples App Store.</li>
-      <li>Scannen, Geraderichten, Bereinigen, Texterkennung sowie automatisches Benennen und Sortieren laufen vollständig auf deinem iPhone. Die Kamera wird nur beim Scannen genutzt; Fotos wählst du über Apples Fotoauswahl, OnceScan sieht nur die ausgewählten Fotos.</li>
-      <li>Scans, Seitenbilder und erkannter Text werden auf deinem iPhone in der App gespeichert.</li>
-      <li><strong>Automatische Ablage (standardmäßig aus):</strong> Wenn du sie einschaltest, speichert OnceScan jeden Scan als PDF in dem Ordner, den du in der Dateien-App gewählt hast. Liegt der Ordner „Auf meinem iPhone“, bleiben die PDFs auf dem iPhone. Liegt er in iCloud Drive, synchronisiert Apple die PDFs wie jede andere Datei (gemäß Apples Bedingungen). Bei einer anderen Cloud-App gelten deren Bedingungen. OnceScan selbst lädt nie etwas hoch.</li>
+      <li>Scannen, Geraderichten, Bereinigen, Texterkennung, das Lesen von QR-Codes auf E-Rechnungen sowie automatisches Benennen und Sortieren laufen vollständig auf deinem iPhone. Die Kamera wird nur beim Scannen genutzt; Fotos wählst du über Apples Fotoauswahl, OnceScan sieht nur die ausgewählten Fotos. Zugriff zum Hinzufügen zu Fotos fragt OnceScan nur an, wenn du eine Seite als Foto teilst und „Bild sichern“ wählst.</li>
+      <li>Scans, Seitenbilder, erkannter Text, Schlagwörter, Notizen und die Originaldatei importierter PDFs werden auf deinem iPhone in der App gespeichert und von iOS verschlüsselt. Mit „Stärkster Dateischutz“ in den Einstellungen sind sie nicht lesbar, solange dein iPhone gesperrt ist – auch nicht für OnceScan. Das gilt für die Scans, Seiten und Texte, die die App speichert, nicht aber für kleine Einstellungen der App (etwa die pro Geschäft gemerkten Schlagwörter oder Namen und Steuernummern unter „Über dich“) und nicht für PDFs, die schon in deinem Ablageordner oder im Ordner „Ältere Versionen“ liegen.</li>
+      <li>Was du in den Einstellungen unter „Über dich“ einträgst (Name, Firma, Steuernummer), bleibt in den App-Einstellungen auf deinem iPhone und dient nur dazu, deine eigenen Rechnungen zu erkennen.</li>
+      <li>Beim Import eines passwortgeschützten PDFs wird das Passwort nur einmal zum Öffnen verwendet und nicht gespeichert; die geöffnete Datei wird wie jeder andere Scan in OnceScan gespeichert.</li>
+      <li>„Zum Kalender hinzufügen“ öffnet Apples Fenster für ein neues Ereignis mit dem Fälligkeitsdatum. OnceScan liest deinen Kalender nicht, und es wird nichts eingetragen, solange du nicht sicherst.</li>
+      <li>Text, den du aus einem Scan kopierst, landet in der Zwischenablage des iPhone. OnceScan behält ihn auf diesem Gerät und lässt ihn nach wenigen Minuten verfallen.</li>
+      <li><strong>In einem Ordner sichern (standardmäßig aus):</strong> Wenn du „Jeden Scan als PDF im Ordner sichern“ einschaltest, speichert OnceScan jeden Scan als PDF in dem Ordner, den du in der Dateien-App gewählt hast. Liegt der Ordner „Auf meinem iPhone“, bleiben die PDFs auf dem iPhone. Liegt er in iCloud Drive, synchronisiert Apple die PDFs wie jede andere Datei (gemäß Apples Bedingungen). Bei einer anderen Cloud-App gelten deren Bedingungen. OnceScan selbst lädt nie etwas hoch.</li>
+      <li><strong>Ältere Versionen:</strong> Bearbeitest du die Seiten eines abgelegten Scans, überschreibt OnceScan das PDF im Ordner nicht (es kann deine Notizen oder Unterschrift enthalten). Es wird unverändert in den Ordner „Ältere Versionen“ daneben verschoben, und die neuen Seiten werden als neues PDF gesichert. <!-- VERIFY after merge: B 組舊版本上限 -->Pro Scan bleiben dort bis zu 3 ältere Versionen; noch ältere werden entfernt. Du kannst sie jederzeit in der Dateien-App löschen.</li>
+      <li>Abgelegte PDFs und ältere Versionen sind normale Dateien und <strong>nicht durch die Face-ID-Sperre von OnceScan geschützt</strong>: Wer auf deinem entsperrten iPhone die Dateien-App öffnen kann, kann sie öffnen und den Text darin durchsuchen.</li>
       <li>Abgesehen vom Ablageordner verlässt ein Dokument die App nur, wenn du es selbst teilst (z. B. per Mail, Nachrichten oder über die Dateien-App).</li>
-      <li>Lösche ein Dokument in der App oder lösche die App, um alle Scans in OnceScan zu entfernen. Bereits abgelegte oder geteilte PDFs werden dabei nicht gelöscht; sie sind normale Dateien, die du in der Dateien-App löschen kannst. Nur eine Zahl bleibt im Schlüsselbund: wie viele Dokumente erstellt wurden, damit das Gratiskontingent bei einer Neuinstallation nicht zurückgesetzt wird. Sie enthält keine Inhalte und verlässt dein Gerät nie. Wenn du iCloud-Backup oder ein Backup am Computer nutzt, kann dieses Backup OnceScan-Daten enthalten (gemäß Apples Bedingungen).</li>
-      <li>Der Kauf wird von Apple über den App Store abgewickelt. Wir erhalten weder deinen Namen noch Zahlungsdaten oder Informationen zu deinem Apple Account.</li>
+      <li><strong>Löschen:</strong> Ein gelöschter Scan liegt zuerst 30 Tage unter „Zuletzt gelöscht“ und lässt sich in dieser Zeit wiederherstellen. Danach wird er beim nächsten Öffnen von OnceScan endgültig gelöscht; unter „Zuletzt gelöscht“ kannst du ihn auch sofort endgültig löschen. Wenn du die App löschst, werden alle Scans in OnceScan entfernt. Abgelegte PDFs, ältere Versionen und geteilte Dateien werden dabei nicht gelöscht, außer du schaltest in den Einstellungen „Abgelegte PDFs mitlöschen“ ein; sie sind normale Dateien, die du in der Dateien-App löschen kannst.</li>
+      <li>Nur eine Zahl bleibt im Schlüsselbund: wie viele Dokumente erstellt wurden, damit das Gratiskontingent bei einer Neuinstallation nicht zurückgesetzt wird. Sie enthält keine Inhalte und wird nie an uns gesendet. Wie andere Schlüsselbundeinträge ist sie in deinem verschlüsselten iPhone-Backup enthalten und zieht mit auf ein neues iPhone, das du aus diesem Backup einrichtest. Wenn du iCloud-Backup oder ein Backup am Computer nutzt, kann dieses Backup OnceScan-Daten enthalten (gemäß Apples Bedingungen).</li>
+      <li>Der Kauf wird von Apple über den App Store abgewickelt. Wir erhalten weder deinen Namen noch Zahlungsdaten oder Informationen zu deinem Apple-Account.</li>
+      <li><strong>Wenn du uns schreibst:</strong> Wir erhalten deine E-Mail-Adresse sowie Inhalt und Anhänge deiner Nachricht. Wir nutzen sie nur, um dir zu antworten, bewahren sie nur so lange auf, wie das Gespräch es erfordert, und löschen sie auf Wunsch. Das Postfach wird von Google (Gmail) betrieben; Google verarbeitet die E-Mails nach seinen Bedingungen. Rechtsgrundlage ist die Beantwortung deiner Anfrage (Art. 6 Abs. 1 lit. b DSGVO) und unser berechtigtes Interesse an Support (Art. 6 Abs. 1 lit. f DSGVO). Du hast das Recht auf Auskunft, Berichtigung und Löschung der Daten, die wir über dich haben (nur Support-E-Mails), auf Einschränkung der Verarbeitung, Widerspruch und Datenübertragbarkeit sowie das Recht, dich bei einer Datenschutz-Aufsichtsbehörde zu beschweren, zum Beispiel an deinem Wohnort.</li>
     </ul>
-    <p>Kontakt: Yu-Kai Wang · <a href="mailto:oncescan.app@gmail.com">oncescan.app@gmail.com</a></p>
+    <div class="trader">
+      <p>Entwickler und Verantwortlicher: Yu-Kai Wang</p>
+      <p>Anschrift: 12F., No. 31, Chengzhou 6th Rd., Wugu Dist., New Taipei City 248, Taiwan</p>
+      <p>E-Mail: <a href="mailto:oncescan.app@gmail.com">oncescan.app@gmail.com</a></p>
+    </div>
   </section>
 </main>
 </body>
